@@ -15,7 +15,7 @@ for filename in filenames:
     images.append(np.array(img))
 
 iio.imwrite(
-    'team.gif',
+    'GIF',
     images,
     duration=0.5,
     loop=0
