@@ -1,13 +1,13 @@
 # GIF Creator using Python
 
-A simple Python project that creates an animated GIF from multiple images using `imageio`, `Pillow`, and `NumPy`.
+A Python project that generates an animated GIF by combining multiple images using **imageio**, **Pillow**, and **NumPy**.
 
 ## Features
 
-* Loads multiple images
-* Resizes all images to the same dimensions
-* Combines images into a GIF
-* Supports custom frame duration and looping
+* Load multiple images automatically
+* Resize images to a uniform size
+* Generate an animated GIF
+* Control frame duration and looping
 
 ## Technologies Used
 
@@ -18,7 +18,7 @@ A simple Python project that creates an animated GIF from multiple images using 
 
 ## Installation
 
-Install the required libraries:
+Install the required dependencies:
 
 ```bash
 pip install imageio pillow numpy
@@ -29,20 +29,21 @@ pip install imageio pillow numpy
 ```plaintext
 project/
 │
+├── .gitignore
+├── README.md
+├── create_gif.py
 ├── image1.jpeg
 ├── image2.jpeg
-├── create_gif.py
-├── team.gif
-└── README.md
+└── output.gif
 ```
 
-## Code Explanation
+## How It Works
 
-1. Load input images.
-2. Read the size of the first image.
-3. Resize all images to match.
-4. Convert images into arrays.
-5. Generate an animated GIF.
+1. Load input images
+2. Read dimensions from the first image
+3. Resize remaining images
+4. Convert images into arrays
+5. Export the final animated GIF
 
 ## Usage
 
@@ -58,7 +59,11 @@ Output:
 GIF created successfully!
 ```
 
-A file named `team.gif` will be generated in the project folder.
+Generated file:
+
+```plaintext
+output.gif
+```
 
 ## Example
 
@@ -69,16 +74,15 @@ Input:
 
 Output:
 
-* team.gif
+* output.gif
 
 ## Future Improvements
 
-* Support more than two images
-* Add image transition effects
+* Support unlimited images
+* Add transition effects
 * Allow custom output filename
-* Add GUI interface
+* Create a graphical user interface (GUI)
 
 ## Author
 
 Ankit Singh
-
